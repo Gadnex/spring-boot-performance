@@ -58,7 +58,7 @@ I was surprised to find that the Servlet stack was faster than WebFlux when runn
 
 It could be that in the example WebFlux application has a code issue that prevented optimal performance, but even this would be a significant finding. It would mean that Webflux doesn't automatically yield better performance and that developers need to take care to get the best performance out of Webflux.
 
-It could also be that the current JMeter test project with with 10 threads is insufficient to show the advantages of WebFlux. JMeter is currently making blocking HTTP calls, so perhaps the REST client needs to make non blocking HTTP/2 calls to show the advantages of WebFlux. 
+It could also be that the current JMeter test project with 10 threads is insufficient to show the advantages of WebFlux. JMeter is currently making blocking HTTP calls, so perhaps the REST client needs to make non blocking HTTP/2 calls to show the advantages of WebFlux. 
 
 It is unlikely that this result was caused by the CPU and memory limits applied to the Docker containers. When running similar tests (data not shown) without these limits, the performance of Servlet over WebFlux only widened.
 
